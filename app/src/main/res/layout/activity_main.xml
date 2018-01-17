@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/StyleTextIntroduction"
+        android:text="@string/sIntroduction" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/StyleQuestionBlock"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/StyleQuestionTag"
+                    android:text="@string/sQuestionTag1" />
+
+                <TextView
+                    style="@style/StyleQuestion"
+                    android:text="@string/sQuestion1Description" />
+
+                <RadioGroup
+                    android:id="@+id/id_q1_group"
+                    style="@style/StyleRadioButton"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/id_q1_option1"
+                        style="@style/StyleRadioButton"
+                        android:text="@string/sQ1Option1Correct" />
+
+                    <RadioButton
+                        android:id="@+id/id_q1_option2"
+                        style="@style/StyleRadioButton"
+                        android:text="@string/sQ1Option2" />
+
+                    <RadioButton
+                        android:id="@+id/id_q1_option3"
+                        style="@style/StyleRadioButton"
+                        android:text="@string/sQ1Option3" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/StyleQuestionBlock"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/StyleQuestionTag"
+                    android:text="@string/sQuestionTag2" />
+
+                <TextView
+                    style="@style/StyleQuestion"
+                    android:text="@string/sQuestion2Description" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q2o1correct"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ2Option1Correct" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q2o2"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ2Option2" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q2o3"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ2Option3" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q2o4correct"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ2Option4Correct" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/StyleNormalButton"
+                    android:onClick="calculateResult"
+                    android:text="@string/sFinishQuiz" />
+
+                <Button
+                    style="@style/StyleNormalButton"
+                    android:onClick="restartQuiz"
+                    android:text="@string/sRestartQuiz" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

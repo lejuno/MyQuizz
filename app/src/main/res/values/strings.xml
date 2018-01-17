@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyQuiz</string>
+    <string name="sQuestionTag1">Question 1</string>
+    <string name="sQuestion1Description">In which year São Paulo city was founded?</string>
+    <string name="sQ1Option1Correct">25/Jan/1554</string>
+    <string name="sQ1Option2">28/Jan/1554</string>
+    <string name="sQ1Option3">01/Jan/1554</string>
+    <string name="sIntroduction">Do you know São Paulo City?</string>
+    <string name="sQuestionTag2">Question 2</string>
+    <string name="sQuestion2Description">Select two words that belong to the Name and Last name of São Paulo City´s Mayor!</string>
+    <string name="sQuestionTag3">Question 3</string>
+    <string name="sQuestionTag4">Question 4</string>
+    <string name="sQuestionTag5">Question 5</string>
+    <string name="sQuestionTag6">Question 6</string>
+    <string name="sQuestionTag7">Question 7</string>
+    <string name="sQuestionTag8">Question 8</string>
+    <string name="sQuestionTag9">Question 9</string>
+    <string name="sQuestionTag10">Question 10</string>
+    <string name="sFinishQuiz">End Quiz</string>
+    <string name="sRestartQuiz">Restart</string>
+    <string name="sQ2Option1Correct">João</string>
+    <string name="sQ2Option2">Pedro</string>
+    <string name="sQ2Option3">Mória</string>
+    <string name="sQ2Option4Correct">Dória</string>
+</resources>
