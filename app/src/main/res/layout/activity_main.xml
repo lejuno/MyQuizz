@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:focusedByDefault="true"
+    android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
     <TextView
@@ -20,9 +22,7 @@
             android:layout_margin="8dp"
             android:orientation="vertical">
 
-            <LinearLayout
-                style="@style/StyleQuestionBlock"
-                android:orientation="vertical">
+            <LinearLayout style="@style/StyleQuestionBlock">
 
                 <TextView
                     style="@style/StyleQuestionTag"
@@ -54,9 +54,7 @@
                 </RadioGroup>
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/StyleQuestionBlock"
-                android:orientation="vertical">
+            <LinearLayout style="@style/StyleQuestionBlock">
 
                 <TextView
                     style="@style/StyleQuestionTag"
@@ -87,6 +85,108 @@
                     android:text="@string/sQ2Option4Correct" />
             </LinearLayout>
 
+            <LinearLayout style="@style/StyleQuestionBlock">
+
+                <TextView
+                    style="@style/StyleQuestionTag"
+                    android:text="@string/sQuestionTag3" />
+
+                <TextView
+                    style="@style/StyleQuestion"
+                    android:text="@string/sQuestion3Description" />
+
+                <EditText
+                    android:id="@+id/id_et_q3_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/sQ3Hint"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleQuestionBlock">
+
+                <TextView
+                    style="@style/StyleQuestionTag"
+                    android:text="@string/sQuestionTag4" />
+
+                <TextView
+                    style="@style/StyleQuestion"
+                    android:text="@string/sQuestion4Description" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q4o1wrong"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ4Option1Wrong" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q4o2correct"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ4Option2Correct" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q4o3wrong"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ4Option3Wrong" />
+
+                <CheckBox
+                    android:id="@+id/id_cb_q4o4wrong"
+                    style="@style/StyleCheckBox"
+                    android:text="@string/sQ4Option4Wrong" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleQuestionBlock">
+
+                <TextView
+                    style="@style/StyleQuestionTag"
+                    android:text="@string/sQuestionTag5" />
+
+                <TextView
+                    style="@style/StyleQuestion"
+                    android:text="@string/sQuestion5Description" />
+
+                <RadioGroup
+                    android:id="@+id/id_q5_group"
+                    style="@style/StyleRadioButton"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/id_q5_option1"
+                        style="@style/StyleRadioButton"
+                        android:text="@string/sYes" />
+
+                    <RadioButton
+                        android:id="@+id/id_q5_option2"
+                        style="@style/StyleRadioButton"
+                        android:text="@string/sNo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout style="@style/StyleQuestionBlock">
+
+                <TextView
+                    style="@style/StyleQuestionTag"
+                    android:text="@string/sQuestionTag5" />
+
+                <TextView
+                    style="@style/StyleQuestion"
+                    android:text="@string/sQuestion5Description" />
+
+                <RadioGroup
+                    android:id="@+id/id_q6_group"
+                    style="@style/StyleRadioButton"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/id_q6_option1"
+                        style="@style/StyleRadioButton"
+                        android:text="@string/sQ6Option1Wrong" />
+
+                    <RadioButton
+                        android:id="@+id/id_q6_option2"
+                        style="@style/StyleRadioButton"
+                        android:text="@string/sQ6Option2Correct" />
+                </RadioGroup>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
